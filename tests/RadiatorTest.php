@@ -21,7 +21,9 @@ class RadiatorTest extends MockeryTestCase {
 
     public function testUpdateThermostat() {
         
-        $mock = \Mockery::mock('Thermometer', 'iThermometer');
+        //$mock = \Mockery::mock('Thermometer', 'iThermometer');
+
+        $mock = \Mockery::mock(iThermometer::class);
 
         $radiator = new Radiator($mock);
 
